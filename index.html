@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+    <title>Document</title>
+</head>
+
+<body onload="searchYouTubeWiki()">
+
+    <div class="container-head">
+        <header class="flex space-between align-center">
+            <h1>WikiTube</h1>
+            <input class="input-search-user" oninput="searchYouTubeWiki()" type="text" placeholder="search">
+        </header>
+    </div>
+
+    <!-- cover -->
+
+    <div class="cover-img  text-cover flex  column space-around align-center">
+        <div class="text-cover flex align-center column justify-center space-around">
+        </div>
+    </div>
+
+    <div class="container">
+
+        <main class="flex space-between">
+            <div class="list-youtube">
+                <img class="logo-youtube" src="img/YouTube_Logo.png">
+                <ul class="list-videos clean-list"></ul>
+            </div>
+
+            <div class="video-and-wiki">
+                <div class="video-found"></div>
+                <ul class="list-wiki clean-list"></ul>
+            </div>
+
+        </main>
+
+    </div>
+    <footer class="flex align-center justify-center">
+
+        © 2018 shuvy.
+    </footer>
+
+    <script src=" https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="js/main.js "></script>
+    <script src="js/config.js "></script>
+
+</body>
+
+</html>

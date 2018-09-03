@@ -1,0 +1,282 @@
+* {
+    box-sizing: border-box;
+}
+
+
+@font-face {
+    font-family: Varela;
+    src: url('../fonts/Varela_Round/VarelaRound-Regular.ttf');
+}
+
+/*helpers*/
+
+
+/* flex */
+
+.flex {
+    display: flex;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.space-around {
+    justify-content: space-around;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.align stretch {
+
+  align-items: stretch;  
+}
+
+.clean-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+
+
+body {
+    color: white;
+    background-color: #1D272E;
+    font-family: Varela, Arial, Helvetica, sans-serif;
+    margin: 0;
+    
+}
+
+a {
+    text-decoration-line: none;
+    color: rgb(217, 16, 16);
+}
+a:hover {
+
+    color: rgba(217, 16, 16, 0.37);   
+}
+.container {
+    
+    margin: 0 auto;
+    
+    max-width: 980px;
+}
+
+.container-head {
+    margin-bottom: 20px;
+    background-color: black;
+
+}
+header {
+    margin: 0 auto;
+    
+    max-width: 980px;
+    
+}
+
+iframe {
+    margin: 30px;
+    width: 500px;
+    height:315px;
+    margin: 0 auto;
+    display: block;
+}
+
+.input-search-user {
+height: 40px;
+margin: 5px;
+border-radius: 5px;
+text-align: center;
+}
+
+li {
+padding: 10px;
+margin:20px;
+border-radius: 10px;
+}
+
+
+.video-and-wiki {
+    padding: 10px;
+    padding-top: 20px;
+}
+
+.list-youtube {
+    padding: 10px;
+    width: 380px; 
+}
+
+.list-videos {
+    padding: 10px;
+    
+    cursor: pointer;
+}
+
+.list-videos li {
+    
+    background-color: rgba(49, 140, 200, 0.589);
+    margin-bottom: 30px;
+
+}
+
+.list-videos li:hover {
+
+    background-color: rgba(49, 140, 200, 0.185);
+
+}
+
+.list-videos img {
+    border-radius: 5px;
+}
+
+.list-wiki {
+width: 500px;
+margin: 0 auto;
+}
+
+.list-wiki li {
+
+    color: #D9B310;
+}
+
+.video-found {
+background: rgba(0, 0, 0, 0.432);
+margin: 0 auto;
+padding: 10px;
+
+}
+
+.logo-youtube {
+
+ width: 50%;
+ height: auto;  
+ align-content: center;
+ margin: 0 auto;
+ display: block;
+ align-items: center;
+}
+
+footer {
+    text-align: center;
+    height: 150px;
+    background-color: #D9B310;
+}
+
+
+
+/* cover */
+.cover-img {
+    background-color: #D9B310;
+
+    background-image: url(../img/coverplus1.png);
+    width: 100%;
+    height: 400px;
+    background-position: center;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 20px;
+}
+
+.text-cover h1{
+    font-family: 'Oswald', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 15px;
+    font-size: 6em;
+    color: #0F243E;
+    background-color: rgba(240, 255, 255, 0.377);
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+
+.btn-cover {
+    background: #0F243E;
+    background-color: rgba(15, 36, 62, 0.363);
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 21px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+.btn-cover:hover {
+    background: #3cb0fd;
+    background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+    text-decoration: none;
+  }
+
+  @media (max-width: 956px) {
+    .cover-img {
+        display: none;
+    }
+
+  }
+
+@media (max-width: 806px) {
+
+    header h1 {
+        padding-left: 10px;
+    }
+    main{
+        flex-direction: column-reverse;
+    }
+
+} 
+
+
+@media (max-width: 546px) {
+
+    header {
+        flex-wrap: wrap;
+    }
+    .list-wiki {
+        max-width: 100%;
+    }
+
+    iframe {
+        width: 100%;
+        /* max-width: 540px; */
+        /* width: 500px; */
+        /* height:315px; */
+    }
+
+    .list-videos {
+        width: 100%;
+
+    }
+
+    .list-youtube {
+        max-width: 100%;
+    }
+}
