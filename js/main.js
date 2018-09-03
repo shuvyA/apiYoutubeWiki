@@ -1,12 +1,7 @@
 'use strict';
 
-// import config from 'co'
-
-console.log('WikiTube');
-
 // api youtube
 var YT_KEY = 'my api';
-
 
 function searchYouTubeWiki() {
     var txtFromUser = getTxtFromUser();
@@ -45,7 +40,6 @@ function runSearchWiki(value) {
         })
 }
 
-
 function renderVideoFromYouTube(res) {
     var video = res.items[0].id.videoId;
 
@@ -55,8 +49,6 @@ frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
             </iframe>`;
     document.querySelector('.video-found').innerHTML = strHtml;
 }
-
-
 
 function renderListVideos(res) {
     var strHtml = '';
@@ -76,9 +68,7 @@ function renderListVideos(res) {
     document.querySelector('.list-videos').innerHTML = strHtml;
 }
 
-
 function playVideoByUrl(video) {
-
     var strHtml = `  
            <iframe  src="https://www.youtube.com/embed/${video}" 
 frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
@@ -91,7 +81,6 @@ function renderListWiki(listWiki) {
     var strHtml = '';
 
     listWiki[1].forEach(function (currWiki, idx) {
-
         strHtml += `
     <li>
     <h3>${ listWiki[1][idx]}</h3>
